@@ -5,31 +5,23 @@
   margin-bottom: 40px;
   max-width: 600px;
   color: #d1d5db;
-}
 
-@media (min-width: 1280px) {
-  .subtitle {
+  @media (min-width: 1280px) {
     font-size: 24px;
     line-height: 28px;
   }
-}
 
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .subtitle {
+  @media (min-width: 1024px) and (max-width: 1279px) {
     font-size: 20px;
     line-height: 28px;
   }
-}
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .subtitle {
+  @media (min-width: 768px) and (max-width: 1023px) {
     font-size: 18px;
     line-height: 28px;
   }
-}
 
-@media (max-width: 767px) {
-  .subtitle {
+  @media (max-width: 767px) {
     font-size: 16px;
     line-height: 24px;
   }

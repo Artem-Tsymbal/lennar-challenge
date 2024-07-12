@@ -7,19 +7,21 @@ import Image from "next/image";
 const Home: React.FC = () => {
   return (
     <DefaultLayout>
-      <section className={styles.leftSection}>
-        <HeroSection />
-      </section>
-      <section className={styles.rightSection}>
-        <Image
-          src="/illustration.png"
-          alt="Illustration"
-          className={styles.image}
-          layout="responsive"
-          width={500}
-          height={500}
-        />
-      </section>
+      <div className={styles.home__container}>
+        <section className={styles["home__left-section"]}>
+          <HeroSection />
+        </section>
+        <section className={styles["home__right-section"]}>
+          <Image
+            src="/illustration.png"
+            alt="Illustration"
+            className={styles["home__image"]}
+            layout="responsive"
+            width={500}
+            height={500}
+          />
+        </section>
+      </div>
     </DefaultLayout>
   );
 };

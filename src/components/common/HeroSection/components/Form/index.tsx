@@ -34,17 +34,18 @@ const FormComponent: React.FC = () => {
   };
 
   return (
-    <form className={styles.outerContainer} onSubmit={handleSubmit}>
+    <form className={styles["form-component"]} onSubmit={handleSubmit}>
       <input
         type="email"
         placeholder="Enter your email"
-        className={styles.input}
+        className={styles["form-component__input"]}
         value={email}
         onChange={handleInputChange}
       />
       <SubmitButton
         variant={isMobile ? "mobile" : "desktop"}
-        className={styles.button}
+        className={styles["form-component__button"]}
+        email={email}
       >
         Start free trial
       </SubmitButton>

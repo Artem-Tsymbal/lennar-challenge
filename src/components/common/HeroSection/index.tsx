@@ -8,12 +8,12 @@ import styles from "./index.module.scss";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className={styles.heroSection}>
-      <div className={styles.container}>
-        <div className={styles.banner}>
+    <section className={styles["hero-section"]}>
+      <div className={styles["hero-section__container"]}>
+        <div className={styles["hero-section__banner"]}>
           <Banner />
         </div>
-        <div className={styles.textContainer}>
+        <div className={styles["hero-section__text-container"]}>
           <Title />
           <Subtitle />
         </div>

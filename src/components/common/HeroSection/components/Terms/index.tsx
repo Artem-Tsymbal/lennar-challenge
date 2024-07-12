@@ -8,7 +8,7 @@ const Terms: React.FC = () => {
       Start your free 14-day trial, no credit card necessary. By providing your
       email, you agree to our
       <Link href="/terms" legacyBehavior>
-        <a className={styles.termsLink}>terms of service</a>
+        <a className={styles["terms__link"]}>terms of service</a>
       </Link>
       .
     </p>

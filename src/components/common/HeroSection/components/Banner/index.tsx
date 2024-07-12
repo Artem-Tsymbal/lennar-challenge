@@ -6,14 +6,14 @@ import styles from "./index.module.scss";
 const Banner: React.FC = () => {
   return (
     <div className={styles.banner}>
-      <div className={styles.badge}>WE&apos;RE HIRING</div>
+      <div className={styles.banner__badge}>WE&apos;RE HIRING</div>
       <Link href="/careers" passHref legacyBehavior>
-        <a className={styles.link}>
+        <a className={styles.banner__link}>
           Visit our careers page
           <Image
             src="/chevronRightIcon.png"
             alt="Chevron Right"
-            className={styles.icon}
+            className={styles.banner__icon}
             width={10}
             height={6}
           />

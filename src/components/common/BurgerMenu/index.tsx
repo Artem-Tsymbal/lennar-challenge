@@ -8,13 +8,13 @@ interface BurgerMenuProps {
 const BurgerMenu: React.FC<BurgerMenuProps> = ({ onClick }) => {
   return (
     <button
-      className={styles.burgerMenu}
+      className={styles["burger-menu"]}
       onClick={onClick}
       aria-label="Open menu"
     >
-      <div className={styles.burgerMenuLine}></div>
-      <div className={styles.burgerMenuLine}></div>
-      <div className={styles.burgerMenuLine}></div>
+      <div className={styles["burger-menu__line"]}></div>
+      <div className={styles["burger-menu__line"]}></div>
+      <div className={styles["burger-menu__line"]}></div>
     </button>
   );
 };

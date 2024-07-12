@@ -22,6 +22,7 @@ const SubmitButton: React.FC<SubmitButtonProps> = ({
 
   const handleClick = async () => {
     setIsLoading(true);
+
     try {
       const response = await createUser({
         variables: {
@@ -46,7 +47,9 @@ const SubmitButton: React.FC<SubmitButtonProps> = ({
 
   return (
     <button
-      className={`${styles.button} ${styles[variant]} ${className}`}
+      className={`${styles.button} ${
+        styles[`button--${variant}`]
+      } ${className}`}
       onClick={handleClick}
       disabled={isLoading}
     >

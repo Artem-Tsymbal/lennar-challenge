@@ -13,55 +13,61 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
   return (
     <>
       <div
-        className={`${styles.overlay} ${isOpen ? styles.open : ""}`}
+        className={`${styles["mobile-menu__overlay"]} ${
+          isOpen ? styles["mobile-menu__overlay--open"] : ""
+        }`}
         onClick={onClose}
       ></div>
-      <div className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
-        <div className={styles.mobileMenuHeader}>
+      <div
+        className={`${styles["mobile-menu"]} ${
+          isOpen ? styles["mobile-menu--open"] : ""
+        }`}
+      >
+        <div className={styles["mobile-menu__header"]}>
           <Image
             src="/logoIcon.png"
             alt="Logo"
-            className={styles.mobileMenuLogo}
+            className={styles["mobile-menu__logo"]}
             width={35}
             height={32}
           />
           <button
-            className={styles.mobileMenuClose}
+            className={styles["mobile-menu__close"]}
             onClick={onClose}
             aria-label="Close menu"
           >
             ✕
           </button>
         </div>
-        <nav className={styles.mobileMenuNav}>
-          <ul className={styles.mobileMenuNavList}>
+        <nav className={styles["mobile-menu__nav"]}>
+          <ul className={styles["mobile-menu__nav-list"]}>
             <li>
               <Link href="#product" legacyBehavior>
-                <a className={styles.mobileMenuNavLink}>Product</a>
+                <a className={styles["mobile-menu__nav-link"]}>Product</a>
               </Link>
             </li>
             <li>
               <Link href="#features" legacyBehavior>
-                <a className={styles.mobileMenuNavLink}>Features</a>
+                <a className={styles["mobile-menu__nav-link"]}>Features</a>
               </Link>
             </li>
             <li>
               <Link href="#marketplace" legacyBehavior>
-                <a className={styles.mobileMenuNavLink}>Marketplace</a>
+                <a className={styles["mobile-menu__nav-link"]}>Marketplace</a>
               </Link>
             </li>
             <li>
               <Link href="#company" legacyBehavior>
-                <a className={styles.mobileMenuNavLink}>Company</a>
+                <a className={styles["mobile-menu__nav-link"]}>Company</a>
               </Link>
             </li>
           </ul>
         </nav>
-        <div className={styles.mobileMenuActions}>
+        <div className={styles["mobile-menu__actions"]}>
           <SubmitButton variant={"mobile"}>Start free trial</SubmitButton>
-          <p className={styles.mobileMenuLoginContainer}>
+          <p className={styles["mobile-menu__login-container"]}>
             Existing customer?{" "}
-            <Link href="#login" className={styles.mobileMenuLogin}>
+            <Link href="#login" className={styles["mobile-menu__login"]}>
               Login
             </Link>
           </p>
