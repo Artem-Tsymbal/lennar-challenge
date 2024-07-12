@@ -53,9 +53,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           <Link href="#signup" legacyBehavior>
             <a className={styles.mobileMenuSignup}>Start free trial</a>
           </Link>
-          <Link href="#login" legacyBehavior>
-            <a className={styles.mobileMenuLogin}>Existing customer? Login</a>
-          </Link>
+          <p className={styles.mobileMenuLoginContainer}>
+            Existing customer?{" "}
+            <Link href="#login" className={styles.mobileMenuLogin}>
+              Login
+            </Link>
+          </p>
         </div>
       </div>
     </>

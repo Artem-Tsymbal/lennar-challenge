@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  width: 100%;
 
   @media (max-width: 767px) {
     flex-direction: column;
@@ -12,13 +13,12 @@
 }
 
 .input {
-  width: 344px;
+  width: calc(100% - 151px);
   height: 48px;
-  margin-right: 12px;
   padding: 12px 16px;
   border: 2px solid #111827;
   border-radius: 6px;
-  font-family: Inter, sans-serif;
+  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -26,5 +26,19 @@
 
   &:focus {
     box-shadow: 0 0 0 4px #a5b4fc;
+  }
+}
+
+.button {
+  margin-left: 12px;
+}
+
+@media (max-width: 767px) {
+  .input {
+    width: 100%;
+  }
+
+  .button {
+    margin-left: 0;
   }
 }

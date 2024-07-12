@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import BurgerMenu from "../BurgerMenu";
-import MobileMenu from "../MobileMenu";
+import BurgerMenu from "../../common/BurgerMenu";
+import MobileMenu from "../../common/MobileMenu";
 import SubmitButton from "../../shared/SubmitButton";
 import styles from "./index.module.scss";
 
