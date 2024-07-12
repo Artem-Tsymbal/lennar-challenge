@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./index.module.scss";
+import SubmitButton from "@/components/shared/SubmitButton";
+import Image from "next/image";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -16,7 +18,13 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
       ></div>
       <div className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
         <div className={styles.mobileMenuHeader}>
-          <img src="/logo.png" alt="Logo" className={styles.mobileMenuLogo} />
+          <Image
+            src="/logoIcon.png"
+            alt="Logo"
+            className={styles.mobileMenuLogo}
+            width={35}
+            height={32}
+          />
           <button
             className={styles.mobileMenuClose}
             onClick={onClose}
@@ -50,9 +58,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           </ul>
         </nav>
         <div className={styles.mobileMenuActions}>
-          <Link href="#signup" legacyBehavior>
-            <a className={styles.mobileMenuSignup}>Start free trial</a>
-          </Link>
+          <SubmitButton variant={"mobile"}>Start free trial</SubmitButton>
           <p className={styles.mobileMenuLoginContainer}>
             Existing customer?{" "}
             <Link href="#login" className={styles.mobileMenuLogin}>

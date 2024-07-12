@@ -4,6 +4,7 @@ import BurgerMenu from "../../common/BurgerMenu";
 import MobileMenu from "../../common/MobileMenu";
 import SubmitButton from "../../shared/SubmitButton";
 import styles from "./index.module.scss";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,7 +22,13 @@ const Header: React.FC = () => {
       <header className={styles.header}>
         <div className={styles.headerContainer}>
           <div className={styles.navContainer}>
-            <img src="/logo.png" alt="Logo" className={styles.headerLogo} />
+            <Image
+              src="/logoIcon.png"
+              alt="Logo"
+              className={styles.headerLogo}
+              width={35}
+              height={32}
+            />
             <nav className={styles.headerNav}>
               <ul className={styles.headerNavList}>
                 <li>

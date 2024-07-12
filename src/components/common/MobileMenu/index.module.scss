@@ -69,24 +69,16 @@
   }
 
   &Actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: auto;
     width: 100%;
   }
 
-  &Signup {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    background-color: #6366f1;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-  }
-
   &LoginContainer {
+    margin-top: 12px;
     text-align: center;
     color: #6b7280;
     font-size: 16px;

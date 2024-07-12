@@ -1,12 +1,16 @@
-import { AppProps } from "next/app";
-import { ApolloProvider } from "@apollo/client";
-import client from "../lib/apolloClient";
+import React from "react";
+import { ApolloProviderWrapper } from "../lib/apolloClient";
 import "../styles/globals.scss";
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <ApolloProvider client={client}>
-    <Component {...pageProps} />
-  </ApolloProvider>
-);
+const MyApp: React.FC<{ Component: React.FC; pageProps: any }> = ({
+  Component,
+  pageProps,
+}) => {
+  return (
+    <ApolloProviderWrapper>
+      <Component {...pageProps} />
+    </ApolloProviderWrapper>
+  );
+};
 
 export default MyApp;
