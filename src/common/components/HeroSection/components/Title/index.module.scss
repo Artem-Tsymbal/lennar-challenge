@@ -1,0 +1,42 @@
+.titleContainer {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .highlight {
+    color: #818cf8;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.025em;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.04em;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+  }
+}

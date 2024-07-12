@@ -1,0 +1,36 @@
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 40px;
+  max-width: 600px;
+  color: #d1d5db;
+}
+
+@media (min-width: 1280px) {
+  .subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
